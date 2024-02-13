@@ -144,11 +144,15 @@ content:
         quote: >
           유지보수하기 좋은코드, 개발에 TDD, OOP, 클린 코드를 적용
         description: | # this will include new lines to allow paragraphs
-          1. 단위 테스트, 메소드 분리
-          2. TDD, 클래스 분리
-          3. 함수형 프로그래밍, 스트림, 람다
-          4. 점진적인 리팩터링과 OOP
-          5. TDD, OOP, 클린 코드 적용
+          1. 단위 테스트, TDD
+          2. 리팩토링 : 메소드 분리, 클래스 분리, 함수형 프로그래밍, 스트림, 람다, 점진적인 리팩터링과 OOP, 클린코드
+  - title: 🏅 Certificate
+    layout: list
+    content:
+      - layout: top-left
+        title: 정보처리기사
+        sub_title: 한국산업인력공단
+        caption: 2023.11.
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
