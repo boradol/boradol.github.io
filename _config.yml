@@ -114,7 +114,7 @@ content:
   - title: Experience
     layout: list
     content:
-      - layout: right
+      - layout: top-left
         title: H&H(에이치엔에이치)
         sub_title: Backend Developer
         caption: 2.3 Years (eg. 23 August 2021 - 21 November 2023)
@@ -124,7 +124,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           - AWS 기반 클라우드 서버 세팅
           - 앱 서비스에 필요한 API 개발
-      - layout: right
+      - layout: top-left
         title: Infocube(인포큐브)
         sub_title: Embedded Developer
         caption: 1.2 Years (eg. 1 June 2020 - 27 July 2021)
@@ -137,20 +137,22 @@ content:
   - title: Education
     layout: list
     content:
-      - layout: top-right
+      - layout: top-left
         title: Next-step
         sub_title: TDD, 클린 코드 with Java
         caption: 2M (eg. 2022.9. - 2022.11.)
         quote: >
-          Short institution or course description (optional)
+          유지보수하기 좋은코드, 개발에 TDD, OOP, 클린 코드를 적용
         description: | # this will include new lines to allow paragraphs
-          Description of qualification
+          1. 단위 테스트, 메소드 분리
+          2. TDD, 클래스 분리
+          3. 함수형 프로그래밍, 스트림, 람다
+          4. 점진적인 리팩터링과 OOP
+          5. TDD, OOP, 클린 코드 적용
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
-
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+      ^____________________________________^
 
 # Footer
 footer_show_references: true
