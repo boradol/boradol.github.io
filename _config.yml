@@ -88,7 +88,7 @@ content:
         title: H&H(에이치엔에이치)
         sub_title: Backend Developer
         caption: 2.3 Years (eg. 23 August 2021 - 21 November 2023)
-        link: -
+        link: 
         quote: >
           AI 운동 코칭 기반 앱 서비스
         description: | # this will include new lines to allow paragraphs
@@ -98,7 +98,7 @@ content:
         title: Infocube(인포큐브)
         sub_title: Embedded Developer
         caption: 1.2 Years (eg. 1 June 2020 - 27 July 2021)
-        link: -
+        link: 
         quote: >
           5G 네트워크 허브 개발
         description: | # this will include new lines to allow paragraphs
