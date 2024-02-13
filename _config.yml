@@ -6,7 +6,7 @@ repository: https://github.com/boradol
 version: 2
 
 # Personal info
-name: 김보라(BoraKim)
+name: BoraKim(김보라)
 title: Backend Developer
 email: boradol0902@gamil.com
 # email_title: Email (Email title override)
@@ -54,32 +54,63 @@ about_profile_image: images/boradol.jpg
 about_content: | # this will include new lines to allow paragraphs
     __[Intro]__
     - 💯 I major in __Math-Education__.
-    - 💻 Backend developer with __2.3 years__ of experience.
     - 🧐 I'm interested in __OOP__!
-    __[Motto]__<br>
+    - 🧽 I'm like SpongeBob! Because It makes anyone feel __positive__ and __happy__.
+
+    __[Motto]__
+
     Everything is valuable.(모든 것은 __가치__ 있다.)
 
+
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
+  # - title: Projects
+  #   layout: list # Type of content section (list/text)
+  #   content:
+  #     - layout: left
+  #       border: weak  # Value of `weak` will display a weak border below this item. # Any 
+  #                     # other value (or no value) means no border will be displayed
+  #       title: Project name
+  #       link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+  #       link_text: Link Text
+  #       additional_links:
+  #         - title:  Github page for project (eg. sproogen/modern-resume-theme)
+  #           icon: fab fa-github
+  #           url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+  #         - title:  Github page for project (eg. sproogen/modern-resume-theme)
+  #           icon: fab fa-github
+  #           url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+  #       quote: >
+  #         Short overview of the project (optional)
+  #       description: | # this will include new lines to allow paragraphs
+  #         Description about the work on/with the project
+  - title: 🛠️Skills
+    layout: list
     content:
       - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
-                      # other value (or no value) means no border will be displayed
-        title: Project name
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
-        additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        quote: >
-          Short overview of the project (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
+        title: Backend
+        description: |
+          - Language : Java, Kotlin
+          - Spring : Spring Boot 2.5.x, Spring Boot 3.0.x, MVC, JPA(Hibernate), QueryDSL, Security, Vault, Cloud AWS
+          - Test : Junit5, Mockito, Kotest, Mockk
+          - RestDocs, Swagger
+      - layout: left
+        title: DevOps
+        description: | 
+          - DB : MySQL, MariaDB
+          - Linux : Ubuntu18.04, CentOS7
+          - AWS : EC2, ELB, RDS(mariaDB), S3, CloudFront, Backup
+          - Monitoring : Node-exporter, Prometheus, Grafana
+          - Nginx
+          - Github Action
+      - layout: left
+        title: Collaboration
+        description: | 
+          - Agile Tool : Jira, Confluence
+          - Slack
+          - IntelliJ, VSCode
+          - git, github
+ 
+        
   - title: Experience
     layout: list
     content:
