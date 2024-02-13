@@ -3,7 +3,7 @@ repository: https://github.com/boradol
 # favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
 
 # Content configuration version
-version: 1
+version: 2
 
 # Personal info
 name: 김보라(BoraKim)
@@ -19,8 +19,8 @@ website: https://velog.io/@boradol
 darkmode: false
 
 # Social links
-#twitter_username: jekyllrb
 github_username: boradol
+#twitter_username: jekyllrb
 #stackoverflow_username: "00000001"
 #dribbble_username: jekyll
 #facebook_username: jekyll
@@ -52,12 +52,11 @@ github_username: boradol
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/boradol.jpg
 about_content: | # this will include new lines to allow paragraphs
-    [Intro]
+    __[Intro]__
     - 💯 I major in __Math-Education__.
     - 💻 Backend developer with __2.3 years__ of experience.
     - 🧐 I'm interested in __OOP__!
-
-    [Motto]<br>
+    __[Motto]__<br>
     Everything is valuable.(모든 것은 __가치__ 있다.)
 
 content:
@@ -104,8 +103,6 @@ content:
         description: | # this will include new lines to allow paragraphs
           - 네트워크 허브의 ptp4l 프로토콜 설계
           - 네트워크 허브의 QA 테스트 모듈 개발 (C lang)
-      
-          
   - title: Education
     layout: list
     content:
@@ -114,15 +111,15 @@ content:
         sub_title: TDD, 클린 코드 with Java
         caption: 2M (eg. 2022.9. - 2022.11.)
         quote: >
-          
+          Short institution or course description (optional)
         description: | # this will include new lines to allow paragraphs
           Description of qualification
-  # - title: A Little More About Me
-  #   layout: text
-  #   content: | # this will include new lines to allow paragraphs
-  #     This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
+  - title: A Little More About Me
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
 
-  #     Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
 
 # Footer
 footer_show_references: true
