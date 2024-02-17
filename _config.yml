@@ -122,6 +122,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           - 네트워크 허브의 ptp4l 프로토콜 설계
           - 네트워크 허브의 QA 테스트 모듈 개발 (C lang)
+
   - title: Education
     layout: list
     content:
@@ -134,6 +135,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           - 단위 테스트, TDD
           - 리팩토링 : 메소드 분리, 클래스 분리, 함수형 프로그래밍, 스트림, 람다, 점진적인 리팩터링과 OOP, 클린코드
+
   - title: 🏅 Certificate
     layout: list
     content:
@@ -142,7 +144,7 @@ content:
         sub_title: 한국산업인력공단
         caption: 2023.11.
 
-    - title: 🛠️Skills
+  - title: 🛠️Skills
     layout: list
     content:
       - layout: left
