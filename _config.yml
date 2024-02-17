@@ -74,7 +74,7 @@ content:
         quote: >
           AI 운동 코칭 기반 앱 서비스
         description: | # this will include new lines to allow paragraphs
-          - __[2021.08. ~ 2022.02.] 스쿼트챌린지 데모 앱 개발__
+          - [2021.08. ~ 2022.02.] 스쿼트챌린지 데모 앱 개발
             - 개발내용 : 라이벌인 두 회사의 스쿼트 합산 대결을 주제로 앱 서비스 기본 틀 마련 및 포즈 인식의 가동성 범위 테스트
             - AWS 클라우드 초기 서버 세팅
               - EC2 인스턴스에 MariaDB와 Nginx를 설치하고, SpringBoot를 활용한 애플리케이션을 배포함.
@@ -89,11 +89,11 @@ content:
             - FCM API 개발
               - Android와 iOS푸시알람 전송을 할 수 있는 API개발.
               - Spring scheduler로 일정시간에 배치를 돌려 특정 기록에 대해 스쿼트를 더욱 증진할 수 있는 알람을 전송하여 운동을 독려하는 서비스 제공.
-          - __[2023.03. ~ 2023.08.] 스쿼트 챌린지 실제 서비스하기 위한 앱으로 개발__
+          - [2023.03. ~ 2023.08.] 스쿼트 챌린지 실제 서비스하기 위한 앱으로 개발
             - 개발 내용 : 데모 앱 기반으로 일반 사용자가 사용할 수 있는 기능을 추가하여 앱 서비스 제공. 인프라 적으로 일반 사용자에게 좋은 성능을 제공하기 위해 정비 함.
             - 서버 분리 : DB, DEV, Stage, Production 서버 분리 및 Docker 적용.
             - 파일 서버 : minIO -> S3
-          - __[2022.09. ~ 2023.03.] 짐메이트 앱 개발__
+          - [2022.09. ~ 2023.03.] 짐메이트 앱 개발
             - 개발 내용 : 스쿼트 챌린지앱에서 스쿼트를 포함한 78가지 운동으로 확장한 홈트 전용 앱 개발.
 
       - layout: top-left
@@ -106,7 +106,6 @@ content:
         description: | # this will include new lines to allow paragraphs
           - 네트워크 허브의 ptp4l 프로토콜 설계
           - 네트워크 허브의 QA 테스트 모듈 개발 (C lang)
-
 
   - title: Projects
     layout: list # Type of content section (list/text)
