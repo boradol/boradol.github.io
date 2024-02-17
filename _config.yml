@@ -64,27 +64,6 @@ about_content: | # this will include new lines to allow paragraphs
 
 
 content:
-  # - title: Projects
-  #   layout: list # Type of content section (list/text)
-  #   content:
-  #     - layout: left
-  #       border: weak  # Value of `weak` will display a weak border below this item. # Any 
-  #                     # other value (or no value) means no border will be displayed
-  #       title: Project name
-  #       link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-  #       link_text: Link Text
-  #       additional_links:
-  #         - title:  Github page for project (eg. sproogen/modern-resume-theme)
-  #           icon: fab fa-github
-  #           url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-  #         - title:  Github page for project (eg. sproogen/modern-resume-theme)
-  #           icon: fab fa-github
-  #           url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-  #       quote: >
-  #         Short overview of the project (optional)
-  #       description: | # this will include new lines to allow paragraphs
-  #         Description about the work on/with the project
-        
   - title: Experience
     layout: list
     content:
@@ -95,22 +74,8 @@ content:
         link: 
         quote: >
           AI 운동 코칭 기반 앱 서비스
-        description: | # this will include new lines to allow paragraphs
-          - AWS 기반 클라우드 서버 세팅
-            - EC2세팅하여 DEV, Stage, Prod 서버로 분리하였습니다.
-            - RDS : On-Premise로 DB를 적용하다보니, 한 서버안에 DB와 애플리케이션이 같이 돌아가면 장애 발생시 복구가 힘들어 적용하였습니다.
-            - S3 storage 서버 세팅하여 API를 활용한 파일 저장 및 읽기 
-            - Docker 컨테이너를 활용한 신속한 서버 배포
-          - 앱 서비스에 필요한 API 개발
-            - 소셜 로그인 기능 : oAuth2, jwt, Spring Security를 적용
-            - SpringBoot를 활용한 앱서비스를 위한 API 개발 : Jpa, OAuth2, Security, FCM,  Vault, FeignClient 등
-            - 기능구현 : 
-              1. 챌린지방을 만들어 랭킹 기술 구현. - 챌린지 방을 카카오톡으로 공유해서 친구 초대 가능
-              2. 300개가 넘는 컨텐츠 관리 및 API 개발 구현.
-              3. 운동 리포트 관리 구현.
-              4. 회원 포인트 기능 구현.
-              5. 다국어 기능 구현.
-              6. 앱 서비스에 필요한 필수 기능 구현. - 버전, 로그인, 회원가입, 기본적인 약관 문서페이지, 공지사항, 댓글, 이벤트 등.
+        description: | 
+          - 
 
       - layout: top-left
         title: Infocube(인포큐브)
@@ -122,6 +87,28 @@ content:
         description: | # this will include new lines to allow paragraphs
           - 네트워크 허브의 ptp4l 프로토콜 설계
           - 네트워크 허브의 QA 테스트 모듈 개발 (C lang)
+
+
+  - title: Projects
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+                      # other value (or no value) means no border will be displayed
+        title: 방탈출 커뮤니티
+        # link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+        # link_text: Link Text
+        # additional_links:
+        #   - title:  Github page for project (eg. sproogen/modern-resume-theme)
+        #     icon: fab fa-github
+        #     url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+        #   - title:  Github page for project (eg. sproogen/modern-resume-theme)
+        #     icon: fab fa-github
+        #     url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+        # quote: >
+        #   Short overview of the project (optional)
+        # description: | # this will include new lines to allow paragraphs
+        #   Description about the work on/with the project
 
   - title: Education
     layout: list
