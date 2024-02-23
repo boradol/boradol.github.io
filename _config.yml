@@ -52,16 +52,13 @@ github_username: boradol
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/boradol.jpg
 about_content: | # this will include new lines to allow paragraphs
-    __[Intro]__
-
-    - 💯 I major in __Math-Education__.
-    - 🧐 I'm interested in __OOP__!
-    - 🧽 I'm like SpongeBob! Because It makes anyone feel __positive__ and __happy__.
-
-    __[Motto]__
-
-    Everything is valuable.(모든 것은 __가치__ 있다.)
-
+    저는 하드웨어 개발 1년, 스타트업에서 나홀로 시작한 백엔드 개발자가 그 스타트업에서 성장하여 백엔드 개발자로서 커리어를 쌓아가는 중 입니다.
+      - 저는 끊임없이 개발자로 성장하기 위해 교육적 투자를 아끼지 않습니다. (아래 Education 부분 참고)
+      - 하드웨어 개발을 하며 OSI 7계층 중 1,2,3 Layer에 대한 이해도가 높습니다.
+      - 나홀로 삽질하며 백엔드 개발자로 성장한 기간 1년 동안 수 많은 에러들과 하면 안되는 것들을 몸으로 많이 체득하여 보안적인 부분에 대해 항상 의문을 갖는 개발자입니다.
+      - 객체지향적으로 코드를 작성하기 위해 고민 하는 것을 즐깁니다.
+      - TDD의 가치를 깨달았고 테스트코드를 프로젝트에 적용한 경험이 있으며 코드의 무결성을 위해 노력합니다.
+      - 동료와 협업하기 위해 문서화나 자동화에 대해 항상 솔선수범 하며, Jira세팅이나 Confluence를 활용한 문서작업을 세팅하고 팀원들과 교류합니다.
 content:
   - title: Experience
     layout: list
@@ -69,59 +66,58 @@ content:
       - layout: top-left
         title: H&H(에이치엔에이치)
         sub_title: Backend Developer
-        caption: 2.3 Years (eg. 23 August 2021 - 21 November 2023)
+        caption: 2.3 Years (eg. 2021.08.23 - 2023.11.20)
         link: 
         quote: >
           AI 운동 코칭 기반 앱 서비스
         description: | # this will include new lines to allow paragraphs
-          - __[2023.04. ~ 2023.11.] 서버 고도화 작업 및 기능 개선__
+          __[2023.04. ~ 2023.11.] 서버 고도화 작업 및 기능 개선__
             - 개발 내용 : 스쿼트 챌린지앱과 짐메이트 앱의 공통 기능과 각 앱의 기능들을 분리, 비용적인 절감을 위해 정비.
             - AWS 비용 절감을 위한 작업
               - Node-exporter, Prometheus를 적용하여 Grafana로 서버 모니터링 구축.
                 - AlertManager를 Slack과 연동하여 서버 스펙 상 문제가 생길 때 알람이 울려 바로 문제 해결을 할 수 있게 함.
-                - 꾸준히 여러대의 EC2인스턴스를 한번에 Grafana를 통해 모니터링 함으로써 과도하게 사용되는 서버
+                - 꾸준히 여러대의 EC2인스턴스를 한번에 Grafana를 통해 모니터링 함으로써 과도하게 사용되는 서버를 추적하고 슬렉에 알람이 오게 설정하여 혹여나 서버가 다운되는 것을 막아 서비스가 원할하게 제공되게 함.
               - 고정적으로 사용하는 EC2인스턴스를 예약 인스턴스로 적용하여 매월 40%의 비용절감.
               - 기존 스쿼트 챌린지 파일 서버 S3로 이관
-                - 원래 스쿼트 챌린지용 파일 서버를 EC2 한대를 이용하여 저장하였던 것을 S3로 마이그레이션 하면서 EC2 하나의 비용보다 
+                - 원래 스쿼트 챌린지용 파일 서버를 EC2 한대를 이용하여 저장하였던 것을 S3로 마이그레이션 하면서 EC2 하나의 비용보다 훨씬 절감하게 됨. 거의 80%정도의 절감.
               - 고객 문의사항 모니터링
-                - 회사에 CS전담 직원이 없어 고객 문의사항이 들어와도 인지하지 못하는 상황이 발생하여 
-            - 프로젝트에 멀티모듈 적용
-              
-
-            - MSA 적용을 위한 밑작업.
-            - 다국어 지원을 위한 
-          - __[2022.09. ~ 2023.03.] 짐메이트 앱 개발__
+                - 회사에 CS전담 직원이 없어 고객 문의사항이 들어와도 인지하지 못하는 상황이 발생하여 문의사항에 대한 insert쿼리가 발생 할 때, 슬렉에 알람이 오게 하여 서비스 품질 개선에 이바지.
+            - 두 개의 앱에 효과적인 서비스를 위해 멀티모듈과 MSA를 시도하기위해 노력함.
+              - 도메인과 서비스를 각 모듈로 분리하고 인터페이스로만 통신할 수 있게 설계.
+              - 회원 인증에 대한 책임, 다국어 서비스를 위한 책임 등을 각각의 서버와 DB를 분리하여 각각의 서버마다의 의존성을 분리하고 코드 중복도 줄임.
+              - FeignClient 적용하여 우리가 자체로 제작한 프로그램을 서버에 라이브러리화여 배포하고, 다른 서버가 통신을 통하여 해당 API를 활용 할 수 있게 함. 
+          __[2022.09. ~ 2023.03.] 짐메이트 앱 개발__
             - 개발 내용 : 스쿼트 챌린지앱에서 스쿼트를 포함한 78가지 운동으로 확장한 홈트 전용 앱 개발.
             - SpringBoot 개발환경 변경 
               - Kotlin으로 개발
               - Spring Boot 3 으로 마이그레이션
-              - AWS s3 적용.
+              - AWS s3 적용
                 - 기존 minIO를 이용한 파일 인스턴스 대신에 파일관리와 비용적인 측면도 훨씬 효율적인 AWS S3 도입.
                 - 디렉토리에 따라서 권한을 설정하여 사용자가 URL을 알아도 함부러 접근할 수 없게 막음.
                 - AWS Backup을 사용하여 데이터를 정기적으로 백업하여 사용자 데이터 유실을 미연에 방지.   
                 - CloudFront를 사용하여 해당 버킷에 대한 도메인을 설정하고 cdn으로 한국서비스 뿐만아니라 다른 나라의 서비스에서도 파일 접근의 속도가 저하되지 않도록 함.
-              - Spring Cloud의 Vault 적용.
+              - Spring Cloud의 Vault 적용
                 - DB 계정정보나, AWS 계정정보 같은 보안적인 정보들이 properties 파일에 담겨 git에 올라가는 것을 방지하고자 적용.
                 - Vault의 cidr을 회사 내부 관계자들의 ip로만 관리하여 Spring Application을 내부 관계자만 실행 할 수 있게 함.
               - Redis를 이용하여 수많은 운동 데이터 목록 및 홈 화면에 해당하는 API 캐싱하여 목록 제공.
                 - 원래는 사용자가 API를 호출할 때마다 목록이 DB를 통해 불려와졌던 것을 Redis를 활용하여 0.01s 미만의 time out으로 줄임. 
-          - __[2022.03. ~ 2022.08.] 스쿼트 챌린지 실제 서비스하기 위한 앱으로 개발__
+          __[2022.03. ~ 2022.08.] 스쿼트 챌린지 실제 서비스하기 위한 앱으로 개발__
             - 개발 내용 : 데모 앱 기반으로 일반 사용자가 사용할 수 있는 기능을 추가하여 앱 서비스 제공. 인프라 적으로 일반 사용자에게 좋은 성능을 제공하기 위해 정비 함.
             - 서버 분리 : DB, DEV, Stage, Production, Data 서버 분리 및 Docker 적용.
             - 파일 서버 : minIO
             - 주요 API 개발
               - 스쿼트 챌린지를 할 수 있는 챌린지 관련 API 구현.
-                - 챌린지 팀전과 챌린지 개인전으로 챌린지 방을 개설할 수 있는 방 만들기 API 구현
-                - 챌린지에 친구 초대 가능한 API 구현
-                - 스쿼트 개수에 따라 멤버들의 스쿼트 랭킹 API구현
-                - 개인 스쿼트 주간, 월간 기록 API 구현
+                - 챌린지 팀전과 챌린지 개인전으로 챌린지 방을 개설할 수 있는 방 만들기 API 구현.
+                - 챌린지에 친구 초대 가능한 API 구현.
+                - 스쿼트 개수에 따라 멤버들의 스쿼트 랭킹 API구현.
+                - 개인 스쿼트 주간, 월간 기록 API 구현.
                 - 회원 전체 스쿼트 랭킹 API 구현.
                 - 스쿼트 기록에 따라 배지 API 구현.
-                - 앱 리텐션 높이기 위한 포인트 지급 API 구현. (출석체크, 스쿼트 일정 개수 도달, 친구초대, 이벤트)
-                - 기본 기능 API 구현 : 회원 정보 수정, 공지사항, FAQ, 버전
+                - 앱 리텐션 높이기 위한 포인트 지급 API 구현. (출석체크, 스쿼트 일정 개수 도달, 친구초대, 이벤트).
+                - 기본 기능 API 구현 : 회원 정보 수정, 공지사항, FAQ, 버전.
                 - FactoryMethod로 공통 Response 객체로 반환하여 클라이언트가 공통된 반환 객체를 받을 수 있게 구현.
                 - ControllerAdvice로 서버에서 내려주는 공통 에러 처리 구현.
-          - __[2021.08. ~ 2022.02.] 스쿼트챌린지 데모 앱 개발__
+          __[2021.08. ~ 2022.02.] 스쿼트챌린지 데모 앱 개발__
             - 개발내용 : 라이벌인 두 회사의 스쿼트 합산 대결을 주제로 앱 서비스 기본 틀 마련 및 포즈 인식의 가동성 범위 테스트
             - AWS 클라우드 초기 서버 세팅
               - EC2 인스턴스에 MariaDB와 Nginx를 설치하고, SpringBoot를 활용한 애플리케이션을 배포함.
@@ -139,7 +135,7 @@ content:
       - layout: top-left
         title: Infocube(인포큐브)
         sub_title: 연구소 / 사원
-        caption: 1.2 Years (eg. 1 June 2020 - 27 July 2021)
+        caption: 1.2 Years (eg. 2020.06.01 - 2021.07.27)
         link: 
         quote: >
           5G 네트워크 허브 개발
@@ -147,13 +143,13 @@ content:
           - 네트워크 허브의 ptp4l 프로토콜 설계
           - 네트워크 허브의 QA 테스트 모듈 개발 (C lang)
 
-  - title: Projects
+  - title: ⌨️Projects
     layout: list # Type of content section (list/text)
     content:
       - layout: left
         border: weak  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
-        title: 방탈출 커뮤니티
+        # title: 방탈출 커뮤니티
         # link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
         # link_text: Link Text
         # additional_links:
@@ -168,17 +164,34 @@ content:
         # description: | # this will include new lines to allow paragraphs
         #   Description about the work on/with the project
 
-  - title: Education
+  - title: 📚Education
     layout: list
     content:
+      - layout: top-left
+        title: Java Backend 과정
+        sub_title: F-Lab
+        caption: 4M (eg. 2023.12. - ing)
+        # quote: >
+        description: | # this will include new lines to allow paragraphs
+          __성숙한 개발자가 되기 위한 과감한 투자__
+            - 정말 알고 있는가에 대한 질문을 스스로에게 던진 시간
+              - Java부터 시작해서 어떤 개념에 대해 책을 통해 정확한 지식을 정리하고 멘토님의 꼬리질문을 통해 확실히 알기 위해 힘씀.
+              - 멘토님과 이야기를 나누며 기술에 대한 커뮤니케이션 능률을 향상시켰고, DeepDive하고 싶은 내용은 블로그에 효과적으로 작성하려고 노력함.
+            - 커뮤니티 공간에서 여러가지 개발자스러움을 공부
+              - 스터디를 모집하여 서로 DeepDive하고 싶은 주제를 선정하여 매주 2회씩 조사함. 그 내용을 함께 보며 한 문장에 의구심을 가지며 다른사람에게 설득할 수 있는 쉬운 말로 변형해보는 연습을 함.
+              - 온라인 모각코를 통해서 같이 공부하는 동료들과 함께 서로를 독려해주고 개발관련 고민을 공유하며 서로 함께 성장할 수 있는 개발 문화 경험 중.
+              - 커뮤니티를 하면서 개발자는 소통을 두려워 하지 말고, 다른 사람을 설득할 수 있는 과정을 위해 노력해야하며, 새로운 기술이 쏟아지는 이 시대에 그냥 문서를 읽는 것이 아니라 빠른 시간내에 내재화 하는 힘을 얻어야 함을 배우는 중.
       - layout: top-left
         title: ATDD, 클린 코드 with Spring
         sub_title: Next-step
         caption: 1M (eg. 2023.01. - 2023.02.)
-        quote: >
-          ATDD(인수 테스트 주도 개발) 프로세스를 적용하여 TDD(테스트 주도 개발), 클린 코드 작성, 그리고 리팩터링에 대한 경험을 쌓음.
+        # quote: >
         description: | # this will include new lines to allow paragraphs
-          - 인수 테스트의 개념과 스프링 환경에서 효과적인 작성 및 활용 방법
+          __ATDD(인수 테스트 주도 개발) 프로세스를 적용하여 TDD(테스트 주도 개발), 클린 코드 작성, 그리고 리팩터링에 대한 경험을 쌓음.__
+            - 인수 테스트의 개념과 스프링 환경에서 효과적인 작성 및 활용 방법
+            - End to End 테스트로서 요구사항과 일치하는 실제 요청/응답 환경을 만들어 인수(Acceptance) 조건을 검증하는 테스트 조건을 프로젝트에 적용함.
+            - Database의 데이터가 오염될 가능 성이 있기 때문에 Mocking 하는 방법이나 테스트 격리를 하는 방법 활용함.
+              - 이 때, Github Action으로 Test검증시 Vault설정 때문에 테스트에 회원 인증이나 DB Connection등으로 이슈가 발생하였지만, Github Secrets를 활용하여 문제를 개선함. 
       - layout: top-left
         title: TDD, 클린 코드 with Java
         sub_title: Next-step
@@ -187,7 +200,10 @@ content:
           __유지보수하기 좋은코드, 개발에 TDD, OOP, 클린 코드를 적용__
             - 단위 테스트, TDD
             - 리팩토링 : 메소드 분리, 클래스 분리, 함수형 프로그래밍, 스트림, 람다, 점진적인 리팩터링과 OOP, 클린코드
-            - 동료들에게 클린코드와 테스트코드에 대해 Study를 하며 회사 컨벤션에 적용해보며 
+            - 동료들에게 클린코드와 테스트코드에 대해 Study를 하며 회사 컨벤션에 적용할만한 회사 내부 컨벤션을 적립함.
+            - 코드리뷰 시 서로 코드 컨벤션에 조언하며, 코드의 가독성과 코드 수준을 높이려는 붐이 일어나게 됨.
+            - 테스트 코드와 JaCoCo를 플러그인을 추가하여 코드 커버리지를 수치화 하여 볼 수 있게 함. 각 Service항목마다 커버리지 0%가 되지 않게 목표로 잡음.
+            - 코드를 수정하고 push하는 순간 Github Action에서 테스트 코드를 수행함으로써 내가 수정한 코드의 오류를 바로 발견할 수 있었음. 빠른 오류 발견으로 배포되는 프로젝트 환경에 에러가 발생하는 현상이 현저히 줄어듦.
       - layout: top-left
         title: 데이터융합sw과
         sub_title: 분당융합기술교육원(비학위직업훈련과정)
@@ -239,7 +255,23 @@ content:
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      ^____________________________________^
+      __[Intro]__
+
+        - 💯 I major in __Math-Education__.
+        - 🧐 I'm interested in __OOP__!
+        - 🧽 I'm like SpongeBob! Because It makes anyone feel __positive__ and __happy__.
+
+      __[Motto]__
+
+        Everything is valuable.(모든 것은 __가치__ 있다.)
+
+      __[과거 이력]__
+      
+        - 삼성증권 봉사단 YAHO 4기 전북지역 단장으로 기수들을 이끌고, 우수 봉사단원으로 선정됨.
+          - 어떤 소속한 곳의 장이란 것은 더 봉사하는 사람이라는 마음가짐으로 활동 함.
+          - 활동들에 대한 기록을 사진이나 블로그에 남기고 이 귀중한 자료들로 동영상 제작하여 우수 UCC 제작물에 뽑힘.
+          - 1년동안 20명의 단원들 사이에 갈등을 잘 조율하며 화합을 이끎.  
+        - 중학교 수학 교사로 4년정도 근무경력 있음. (전주 소재 중학교)
 
 # Footer
 footer_show_references: true
