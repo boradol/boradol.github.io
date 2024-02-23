@@ -184,9 +184,10 @@ content:
         sub_title: Next-step
         caption: 2M (eg. 2022.9. - 2022.11.) 
         description: | # this will include new lines to allow paragraphs
-        __유지보수하기 좋은코드, 개발에 TDD, OOP, 클린 코드를 적용__
-          - 단위 테스트, TDD
-          - 리팩토링 : 메소드 분리, 클래스 분리, 함수형 프로그래밍, 스트림, 람다, 점진적인 리팩터링과 OOP, 클린코드
+          __유지보수하기 좋은코드, 개발에 TDD, OOP, 클린 코드를 적용__
+            - 단위 테스트, TDD
+            - 리팩토링 : 메소드 분리, 클래스 분리, 함수형 프로그래밍, 스트림, 람다, 점진적인 리팩터링과 OOP, 클린코드
+            - 동료들에게 클린코드와 테스트코드에 대해 Study를 하며 회사 컨벤션에 적용해보며 
       - layout: top-left
         title: 데이터융합sw과
         sub_title: 분당융합기술교육원(비학위직업훈련과정)
