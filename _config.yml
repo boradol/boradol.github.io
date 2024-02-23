@@ -78,21 +78,23 @@ content:
             - 개발 내용 : 스쿼트 챌린지앱과 짐메이트 앱의 공통 기능과 각 앱의 기능들을 분리, 비용적인 절감을 위해 정비.
             - AWS 비용 절감을 위한 작업
               - Node-exporter, Prometheus를 적용하여 Grafana로 서버 모니터링 구축.
-                - AlarmManager를 Slack과 연동하여 서버 스펙 상 문제가 생길 때 알람이 울려 바로 문제 해결을 할 수 있게 함.
+                - AlertManager를 Slack과 연동하여 서버 스펙 상 문제가 생길 때 알람이 울려 바로 문제 해결을 할 수 있게 함.
                 - 꾸준히 여러대의 EC2인스턴스를 한번에 Grafana를 통해 모니터링 함으로써 과도하게 사용되는 서버
               - 고정적으로 사용하는 EC2인스턴스를 예약 인스턴스로 적용하여 매월 40%의 비용절감.
               - 기존 스쿼트 챌린지 파일 서버 S3로 이관
                 - 원래 스쿼트 챌린지용 파일 서버를 EC2 한대를 이용하여 저장하였던 것을 S3로 마이그레이션 하면서 EC2 하나의 비용보다 
               - 고객 문의사항 모니터링
                 - 회사에 CS전담 직원이 없어 고객 문의사항이 들어와도 인지하지 못하는 상황이 발생하여 
-            - 멀티모듈 
+            - 프로젝트에 멀티모듈 적용
+              
+
             - MSA 적용을 위한 밑작업.
             - 다국어 지원을 위한 
           - __[2022.09. ~ 2023.03.] 짐메이트 앱 개발__
             - 개발 내용 : 스쿼트 챌린지앱에서 스쿼트를 포함한 78가지 운동으로 확장한 홈트 전용 앱 개발.
             - SpringBoot 개발환경 변경 
               - Kotlin으로 개발
-              - Spring3.0으로 마이그레이션
+              - Spring Boot 3 으로 마이그레이션
               - AWS s3 적용.
                 - 기존 minIO를 이용한 파일 인스턴스 대신에 파일관리와 비용적인 측면도 훨씬 효율적인 AWS S3 도입.
                 - 디렉토리에 따라서 권한을 설정하여 사용자가 URL을 알아도 함부러 접근할 수 없게 막음.
@@ -134,9 +136,6 @@ content:
             - FCM API 개발
               - Android와 iOS푸시알람 전송을 할 수 있는 API개발.
               - Spring scheduler로 일정시간에 배치를 돌려 특정 기록에 대해 스쿼트를 더욱 증진할 수 있는 알람을 전송하여 운동을 독려하는 서비스 제공.
-
-          
-
       - layout: top-left
         title: Infocube(인포큐브)
         sub_title: 연구소 / 사원
@@ -173,22 +172,33 @@ content:
     layout: list
     content:
       - layout: top-left
-        title: Next-step
-        sub_title: ATDD, 클린 코드 with Spring
+        title: ATDD, 클린 코드 with Spring
+        sub_title: Next-step
         caption: 1M (eg. 2023.01. - 2023.02.)
         quote: >
           ATDD(인수 테스트 주도 개발) 프로세스를 적용하여 TDD(테스트 주도 개발), 클린 코드 작성, 그리고 리팩터링에 대한 경험을 쌓음.
         description: | # this will include new lines to allow paragraphs
           - 인수 테스트의 개념과 스프링 환경에서 효과적인 작성 및 활용 방법
       - layout: top-left
-        title: Next-step
-        sub_title: TDD, 클린 코드 with Java
-        caption: 2M (eg. 2022.9. - 2022.11.)
-        quote: >
-          유지보수하기 좋은코드, 개발에 TDD, OOP, 클린 코드를 적용
+        title: TDD, 클린 코드 with Java
+        sub_title: Next-step
+        caption: 2M (eg. 2022.9. - 2022.11.) 
         description: | # this will include new lines to allow paragraphs
+        __유지보수하기 좋은코드, 개발에 TDD, OOP, 클린 코드를 적용__
           - 단위 테스트, TDD
           - 리팩토링 : 메소드 분리, 클래스 분리, 함수형 프로그래밍, 스트림, 람다, 점진적인 리팩터링과 OOP, 클린코드
+      - layout: top-left
+        title: 데이터융합sw과
+        sub_title: 분당융합기술교육원(비학위직업훈련과정)
+        caption: 10M (eg. 2019.09.02 - 2020.06.)
+        description: | # this will include new lines to allow paragraphs
+          __IT비전공자로서 개발자로서의 취업 발판을 만들어준 교육__
+            - Linux(Ubuntu, CentOS), C, Java, Python, SQL 등 IT 기초 지식에 대해 학습함.
+            - AI과정에서 머신러닝, 딥러닝에 대해에 학습하고 Tensorflow를 활용한 MNIST문자 이미지 인식 프로그램을 구현함. 평가함수를 통해 모델이 오류가 적은 방향으로 학습이 되도록 파라미터 값을 최적화 함.
+            - 리눅스에 직접 나만의 Oracle서버를 설치하여 대용량의 데이터로 쿼리를 직접 작성함. 회원정보의 각 지역별 구매목록을 조사하여 지역별 유의미한 데이터를 추출하는 과정을 경험함. 또 쿼리를 어떻게 작성하느냐에 따라서 성능의 차이가 확연하게 나는것을 경험함.
+            - SpringBoot를 이용한 사원관리 HR게시판 형태를 제작하는 프로젝트를 진행함. 사원을 CRUD 하면서 Web프로그래밍의 기초를 알게 되었고, 직접 데이터를 활용하여 실무적인 프로세스의 프로그래밍을 경험함.
+            - 매일 주어지는 과제를 PPT에 정리하고 발표하는 시간을 가지며 개발자가 Study하는 방법을 터득해 나감.
+            - 과제를 수행 못할 시 과정에서 탈락이 되는 점도 있었고, 동기들이 대부분 다시 도전하기 위해 이 과정을 선택하여 교과과정 이외의 시간 저녁, 주말 함께 배운내용을 터득하기 위해 함께 학습하는 과정에서 개발자라면 기본적으로 문제 해결을 위해 끝까지 포기하지 않고 기술 습득하는 태도를 갖춤.
 
   - title: 🏅 Certificate
     layout: list
@@ -205,14 +215,14 @@ content:
         title: Backend
         description: |
           - Language : Java, Kotlin
-          - Spring : Spring Boot 2.5.x, Spring Boot 3.0.x, MVC, JPA(Hibernate), QueryDSL, Security, Vault, Cloud AWS
+          - Spring : Spring Boot, MVC, JPA(Hibernate), QueryDSL, Security, Spring Cloud AWS, Vault
           - Test : Junit5, Mockito, Kotest, Mockk
           - RestDocs, Swagger
       - layout: left
         title: DevOps
         description: | 
           - DB : MySQL, MariaDB
-          - Linux : Ubuntu18.04, CentOS7
+          - Linux : Ubuntu18.04, CentOS 7
           - AWS : EC2, ELB, RDS(mariaDB), S3, CloudFront, Backup
           - Monitoring : Node-exporter, Prometheus, Grafana
           - Nginx
