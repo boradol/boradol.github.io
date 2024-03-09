@@ -10,7 +10,7 @@ name: BoraKim(김보라)
 title: Backend Developer
 email: boradol0902@gamil.com
 # email_title: Email (Email title override)
-#phone: Your phone number (optional)
+#  phone: Your phone number (optional)
 # phone_title: Phone (Phone title override)
 website: https://velog.io/@boradol
 # website_title: Web (Website title override)
@@ -34,7 +34,7 @@ github_username: boradol
 #googlescholar_username: D847cGsAAAAJ
 
 # Additional icon links
-#additional_links:
+# additional_links:
 #- title: Link name
 #  icon: (https://ibb.co/mD6TVcF)
 #  url: boradol.github.io
@@ -150,20 +150,19 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
-                      # other value (or no value) means no border will be displayed
+        border: weak  # Value of `weak` will display a weak border below this item. # Any other value (or no value) means no border will be displayed
         title: 방탈출 커뮤니티
-        link: github.com/f-lab-edu/escape
+        link: https://github.com/f-lab-edu/escape
         link_text: 방탈출 커뮤니티(Github)
-        # additional_links:
-        #   - title:  Github page for project (eg. sproogen/modern-resume-theme)
-        #     icon: fab fa-github
-        #     url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+        additional_links:
+          - title:  방탈출 커뮤니티
+            icon: fab fa-github
+            url: https://github.com/f-lab-edu/escape
         quote: >
           방탈출예약과 방탈출을 하는 사용자들이 커뮤니티를 즐기는 공간
         description: | # this will include new lines to allow paragraphs
           Git Submodule을 사용하여 민감정보가 포함된 설정 데이터를 private repository에 생성하여 관리 
-          젠킨스를 활용한 CI/CD 서버 구축
+          젠킨스를 활용한 CI/CD 서버 구축 (2024.03.)
 
   - title: 📚Education
     layout: list
