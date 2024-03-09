@@ -3,7 +3,7 @@ repository: https://github.com/boradol
 # favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
 
 # Content configuration version
-version: 2
+version: 2.1
 
 # Personal info
 name: BoraKim(김보라)
@@ -152,20 +152,18 @@ content:
       - layout: left
         border: weak  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
-        # title: 방탈출 커뮤니티
-        # link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        # link_text: Link Text
+        title: 방탈출 커뮤니티
+        link: github.com/f-lab-edu/escape
+        link_text: 방탈출 커뮤니티(Github)
         # additional_links:
         #   - title:  Github page for project (eg. sproogen/modern-resume-theme)
         #     icon: fab fa-github
         #     url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        #   - title:  Github page for project (eg. sproogen/modern-resume-theme)
-        #     icon: fab fa-github
-        #     url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        # quote: >
-        #   Short overview of the project (optional)
-        # description: | # this will include new lines to allow paragraphs
-        #   Description about the work on/with the project
+        quote: >
+          방탈출예약과 방탈출을 하는 사용자들이 커뮤니티를 즐기는 공간
+        description: | # this will include new lines to allow paragraphs
+          Git Submodule을 사용하여 민감정보가 포함된 설정 데이터를 private repository에 생성하여 관리 
+          젠킨스를 활용한 CI/CD 서버 구축
 
   - title: 📚Education
     layout: list
