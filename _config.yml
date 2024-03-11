@@ -9,52 +9,21 @@ version: 2
 name: BoraKim(김보라)
 title: Backend Developer
 email: boradol0902@gamil.com
-# email_title: Email (Email title override)
-#  phone: Your phone number (optional)
-# phone_title: Phone (Phone title override)
 website: https://velog.io/@boradol
-# website_title: Web (Website title override)
 
 # Dark Mode (true/false/never)
 darkmode: false
 
 # Social links
 github_username: boradol
-#twitter_username: jekyllrb
-#stackoverflow_username: "00000001"
-#dribbble_username: jekyll
-#facebook_username: jekyll
-#flickr_username: jekyll
-#instagram_username: jekyll
-#linkedin_username: jekyll
-#xing_username: jekyll
-#pinterest_username: jekyll
-#youtube_username: jekyll
-#orcid_username: 0000-0000-0000-0000
-#googlescholar_username: D847cGsAAAAJ
-
-# Additional icon links
-# additional_links:
-#- title: Link name
-#  icon: (https://ibb.co/mD6TVcF)
-#  url: boradol.github.io
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-#   url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
 
 # About Section
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/boradol.jpg
-about_content: | # this will include new lines to allow paragraphs
+about_content: |  # this will include new lines to allow paragraphs
     저는 하드웨어 개발 1년, 스타트업에서 나홀로 시작한 백엔드 개발자가 그 스타트업에서 성장하여 백엔드 개발자로서 커리어를 쌓아가는 중 입니다.
       - 저는 끊임없이 개발자로 성장하기 위해 교육적 투자를 아끼지 않습니다. (아래 Education 부분 참고)
-      - 하드웨어 개발을 하며 OSI 7계층 중 1,2,3 Layer에 대한 이해도가 높습니다.
+      - 하드웨어 개발할 때 5G네트워크 허브 개발을 하며 디지털 논리회로 및 네트워크에 대한 이해도를 높임.
       - 나홀로 삽질하며 백엔드 개발자로 성장한 기간 1년 동안 수 많은 에러들과 하면 안되는 것들을 몸으로 많이 체득하여 보안적인 부분에 대해 항상 의문을 갖는 개발자입니다.
       - 객체지향적으로 코드를 작성하기 위해 고민 하는 것을 즐깁니다.
       - TDD의 가치를 깨달았고 테스트코드를 프로젝트에 적용한 경험이 있으며 코드의 무결성을 위해 노력합니다.
@@ -70,22 +39,23 @@ content:
         link: 
         quote: >
           AI 운동 코칭 기반 앱 서비스
-        description: | # this will include new lines to allow paragraphs
+        description: | 
           __[2023.04. ~ 2023.11.] 서버 고도화 작업 및 기능 개선__
             - 개발 내용 : 스쿼트 챌린지앱과 짐메이트 앱의 공통 기능과 각 앱의 기능들을 분리, 비용적인 절감을 위해 정비.
             - AWS 비용 절감을 위한 작업
-              - Node-exporter, Prometheus를 적용하여 Grafana로 서버 모니터링 구축.
-                - AlertManager를 Slack과 연동하여 서버 스펙 상 문제가 생길 때 알람이 울려 바로 문제 해결을 할 수 있게 함.
-                - 꾸준히 여러대의 EC2인스턴스를 한번에 Grafana를 통해 모니터링 함으로써 과도하게 사용되는 서버를 추적하고 슬렉에 알람이 오게 설정하여 혹여나 서버가 다운되는 것을 막아 서비스가 원할하게 제공되게 함.
               - 고정적으로 사용하는 EC2인스턴스를 예약 인스턴스로 적용하여 매월 40%의 비용절감.
               - 기존 스쿼트 챌린지 파일 서버 S3로 이관
                 - 원래 스쿼트 챌린지용 파일 서버를 EC2 한대를 이용하여 저장하였던 것을 S3로 마이그레이션 하면서 EC2 하나의 비용보다 훨씬 절감하게 됨. 거의 80%정도의 절감.
+            - 서버 모니터링 업무
+              - Node-exporter, Prometheus를 적용하여 Grafana로 서버 모니터링 구축.
+                - AlertManager를 Slack과 연동하여 서버 스펙 상 문제가 생길 때 알람이 울려 바로 문제 해결을 할 수 있게 함.
+                - 꾸준히 여러대의 EC2인스턴스를 한번에 Grafana를 통해 모니터링 함으로써 과도하게 사용되는 서버를 추적하고 슬렉에 알람이 오게 설정하여 혹여나 서버가 다운되는 것을 막아 서비스가 원할하게 제공되게 함.
               - 고객 문의사항 모니터링
                 - 회사에 CS전담 직원이 없어 고객 문의사항이 들어와도 인지하지 못하는 상황이 발생하여 문의사항에 대한 insert쿼리가 발생 할 때, 슬렉에 알람이 오게 하여 서비스 품질 개선에 이바지.
             - 두 개의 앱에 효과적인 서비스를 위해 멀티모듈과 MSA를 시도하기위해 노력함.
               - 도메인과 서비스를 각 모듈로 분리하고 인터페이스로만 통신할 수 있게 설계.
               - 회원 인증에 대한 책임, 다국어 서비스를 위한 책임 등을 각각의 서버와 DB를 분리하여 각각의 서버마다의 의존성을 분리하고 코드 중복도 줄임.
-              - FeignClient 적용하여 우리가 자체로 제작한 프로그램을 서버에 라이브러리화여 배포하고, 다른 서버가 통신을 통하여 해당 API를 활용 할 수 있게 함. 
+              - FeignClient 적용하여 우리가 자체로 제작한 프로그램을 서버에 라이브러리화여 배포하고, 다른 서버가 통신을 통하여 해당 API를 활용 할 수 있게 함.
           
           __[2022.09. ~ 2023.03.] 짐메이트 앱 개발__
             - 개발 내용 : 스쿼트 챌린지앱에서 스쿼트를 포함한 78가지 운동으로 확장한 홈트 전용 앱 개발.
@@ -141,8 +111,8 @@ content:
         caption: 1.2 Years (eg. 2020.06.01 - 2021.07.27)
         link: 
         quote: >
-          5G 네트워크 허브 개발
-        description: | # this will include new lines to allow paragraphs
+          ORAN 5G 네트워크 허브 개발
+        description: |
           - 네트워크 허브의 ptp4l 프로토콜 설계
           - 네트워크 허브의 QA 테스트 모듈 개발 (C lang)
 
@@ -150,7 +120,8 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any other value (or no value) means no border will be displayed
+        border: weak  # Value of `weak` will display a weak border below this item. 
+                      # Any other value (or no value) means no border will be displayed
         title: 방탈출 커뮤니티
         link: https://github.com/f-lab-edu/escape
         link_text: 방탈출 커뮤니티(Github)
@@ -160,9 +131,10 @@ content:
             url: https://github.com/f-lab-edu/escape
         quote: >
           방탈출예약과 방탈출을 하는 사용자들이 커뮤니티를 즐기는 공간
-        description: | # this will include new lines to allow paragraphs
-          Git Submodule을 사용하여 민감정보가 포함된 설정 데이터를 private repository에 생성하여 관리 
-          젠킨스를 활용한 CI/CD 서버 구축 (2024.03.)
+        description: |
+          Git Submodule을 사용하여 민감정보가 포함된 설정 데이터를 private repository에 생성하여 관리<br>
+          젠킨스를 활용한 CI/CD 서버 구축<br>
+          방탈출 테마 관련한 API 기능 구현<br>
 
   - title: 📚Education
     layout: list
@@ -172,7 +144,7 @@ content:
         sub_title: F-Lab
         caption: 4M (eg. 2023.12. - ing)
         # quote: >
-        description: | # this will include new lines to allow paragraphs
+        description: |
           __성숙한 개발자가 되기 위한 과감한 투자__
             - 정말 알고 있는가에 대한 질문을 스스로에게 던진 시간
               - Java부터 시작해서 어떤 개념에 대해 책을 통해 정확한 지식을 정리하고 멘토님의 꼬리질문을 통해 확실히 알기 위해 힘씀.
@@ -185,8 +157,12 @@ content:
         title: ATDD, 클린 코드 with Spring
         sub_title: Next-step
         caption: 1M (eg. 2023.01. - 2023.02.)
+        additional_links:
+          - title: 로또 구현 
+            icon: fab fa-github
+            url: https://github.com/boradol/java-lotto
         # quote: >
-        description: | # this will include new lines to allow paragraphs
+        description: |
           __ATDD(인수 테스트 주도 개발) 프로세스를 적용하여 TDD(테스트 주도 개발), 클린 코드 작성, 그리고 리팩터링에 대한 경험을 쌓음.__
             - 인수 테스트의 개념과 스프링 환경에서 효과적인 작성 및 활용 방법
             - End to End 테스트로서 요구사항과 일치하는 실제 요청/응답 환경을 만들어 인수(Acceptance) 조건을 검증하는 테스트 조건을 프로젝트에 적용함.
@@ -196,7 +172,7 @@ content:
         title: TDD, 클린 코드 with Java
         sub_title: Next-step
         caption: 2M (eg. 2022.9. - 2022.11.) 
-        description: | # this will include new lines to allow paragraphs
+        description: |
           __유지보수하기 좋은코드, 개발에 TDD, OOP, 클린 코드를 적용__
             - 단위 테스트, TDD
             - 리팩토링 : 메소드 분리, 클래스 분리, 함수형 프로그래밍, 스트림, 람다, 점진적인 리팩터링과 OOP, 클린코드
@@ -208,7 +184,7 @@ content:
         title: 데이터융합sw과
         sub_title: 분당융합기술교육원(비학위직업훈련과정)
         caption: 10M (eg. 2019.09.02 - 2020.06.)
-        description: | # this will include new lines to allow paragraphs
+        description: |
           __IT비전공자로서 개발자로서의 취업 발판을 만들어준 교육__
             - Linux(Ubuntu, CentOS), C, Java, Python, SQL 등 IT 기초 지식에 대해 학습함.
             - AI과정에서 머신러닝, 딥러닝에 대해에 학습하고 Tensorflow를 활용한 MNIST문자 이미지 인식 프로그램을 구현함. 평가함수를 통해 모델이 오류가 적은 방향으로 학습이 되도록 파라미터 값을 최적화 함.
@@ -254,7 +230,7 @@ content:
   
   - title: A Little More About Me
     layout: text
-    content: | # this will include new lines to allow paragraphs
+    content: |
       __[Intro]__
 
         - 💯 I major in __Math-Education__.
@@ -267,7 +243,8 @@ content:
 
       __[과거 이력]__
       
-        - 삼성증권 봉사단 YAHO 4기 전북지역 단장으로 기수들을 이끌고, 우수 봉사단원으로 선정됨.
+        - 삼성증권 봉사단 YAHO 4기 
+          - 전북지역 단장으로 기수들을 이끌고, 우수 봉사단원으로 선정됨.
           - 어떤 소속한 곳의 장이란 것은 더 봉사하는 사람이라는 마음가짐으로 활동 함.
           - 활동들에 대한 기록을 사진이나 블로그에 남기고 이 귀중한 자료들로 동영상 제작하여 우수 UCC 제작물에 뽑힘.
           - 1년동안 20명의 단원들 사이에 갈등을 잘 조율하며 화합을 이끌었음.  
