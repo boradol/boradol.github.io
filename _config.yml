@@ -6,8 +6,8 @@ repository: https://github.com/boradol
 version: 2
 
 # Personal info
-name: BoraKim(김보라)
-title: Backend Developer
+name: BoraKim
+title: Backend Developer(김보라)
 email: boradol0902@gamil.com
 website: https://velog.io/@boradol
 
@@ -155,6 +155,7 @@ content:
               - 커뮤니티를 하면서 개발자는 소통을 두려워 하지 말고, 다른 사람을 설득할 수 있는 과정을 위해 노력해야하며, 새로운 기술이 쏟아지는 이 시대에 그냥 문서를 읽는 것이 아니라 빠른 시간내에 내재화 하는 힘을 얻어야 함을 배우는 중.
       - layout: top-left
         title: ATDD, 클린 코드 with Spring
+        link : https://github.com/boradol/atdd-subway-map
         sub_title: Next-step
         caption: 1M (eg. 2023.01. - 2023.02.)
         additional_links:
@@ -174,6 +175,7 @@ content:
               - 이 때, Github Action으로 Test검증시 Vault설정 때문에 테스트에 회원 인증이나 DB Connection등으로 이슈가 발생하였지만, Github Secrets를 활용하여 문제를 개선함. 
       - layout: top-left
         title: TDD, 클린 코드 with Java
+        link : https://github.com/boradol/java-lotto
         sub_title: Next-step
         caption: 2M (eg. 2022.9. - 2022.11.)
         additional_links:
