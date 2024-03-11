@@ -29,7 +29,7 @@ about_content: |  # this will include new lines to allow paragraphs
       - TDD의 가치를 깨달았고 테스트코드를 프로젝트에 적용한 경험이 있으며 코드의 무결성을 위해 노력합니다.
       - 동료와 협업하기 위해 문서화나 자동화에 대해 항상 솔선수범 하며, Jira세팅이나 Confluence를 활용한 문서작업을 세팅하고 팀원들과 교류합니다.
 content:
-  - title: Experience
+  - title: 👩🏻‍💼 Experience
     layout: list
     content:
       - layout: top-left
@@ -116,7 +116,7 @@ content:
           - 네트워크 허브의 ptp4l 프로토콜 설계
           - 네트워크 허브의 QA 테스트 모듈 개발 (C lang)
 
-  - title: ⌨️Projects
+  - title: ⌨️ Projects
     layout: list # Type of content section (list/text)
     content:
       - layout: left
@@ -248,7 +248,7 @@ content:
           - IntelliJ, VSCode
           - git, github
   
-  - title: A Little More About Me
+  - title: 🧩 A Little More About Me
     layout: text
     content: |
       __[Intro]__
