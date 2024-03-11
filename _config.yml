@@ -156,6 +156,7 @@ content:
       - layout: top-left
         title: ATDD, 클린 코드 with Spring
         link : https://github.com/boradol/atdd-subway-map
+        link_text: 지하철 노선도(Github)
         sub_title: Next-step
         caption: 1M (eg. 2023.01. - 2023.02.)
         additional_links:
@@ -176,6 +177,7 @@ content:
       - layout: top-left
         title: TDD, 클린 코드 with Java
         link : https://github.com/boradol/java-lotto
+        link_text: 로또 게임 구현(Github)
         sub_title: Next-step
         caption: 2M (eg. 2022.9. - 2022.11.)
         additional_links:
@@ -223,7 +225,7 @@ content:
         sub_title: 한국산업인력공단
         caption: 2023.11.
 
-  - title: 🛠️Skills
+  - title: 🛠️ Skills
     layout: list
     content:
       - layout: left
