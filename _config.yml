@@ -158,9 +158,13 @@ content:
         sub_title: Next-step
         caption: 1M (eg. 2023.01. - 2023.02.)
         additional_links:
-          - title: 로또 구현 
+          - title: ATDD 과정 저장소 - 인증 기반 인수 테스트 미션
             icon: fab fa-github
-            url: https://github.com/boradol/java-lotto
+            url: https://github.com/boradol/atdd-subway-favorite
+        additional_links:
+          - title: ATDD 과정 저장소 - 지하철 노선도 관리 미션
+            icon: fab fa-github
+            url: https://github.com/boradol/atdd-subway-map
         # quote: >
         description: |
           __ATDD(인수 테스트 주도 개발) 프로세스를 적용하여 TDD(테스트 주도 개발), 클린 코드 작성, 그리고 리팩터링에 대한 경험을 쌓음.__
@@ -171,7 +175,23 @@ content:
       - layout: top-left
         title: TDD, 클린 코드 with Java
         sub_title: Next-step
-        caption: 2M (eg. 2022.9. - 2022.11.) 
+        caption: 2M (eg. 2022.9. - 2022.11.)
+        additional_links:
+          - title: 볼링 게임 점수판 구현 
+            icon: fab fa-github
+            url: https://github.com/boradol/java-bowling
+        additional_links:
+          - title: 사다리 게임 구현 
+            icon: fab fa-github
+            url: https://github.com/boradol/java-ladder
+        additional_links:
+          - title: 로또 게임 구현 
+            icon: fab fa-github
+            url: https://github.com/boradol/java-lotto
+        additional_links:
+          - title: 자동차 경주 구현 
+            icon: fab fa-github
+            url: https://github.com/boradol/java-racingcar
         description: |
           __유지보수하기 좋은코드, 개발에 TDD, OOP, 클린 코드를 적용__
             - 단위 테스트, TDD
