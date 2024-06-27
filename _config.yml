@@ -141,9 +141,17 @@ content:
     layout: list
     content:
       - layout: top-left
+        title: DDD 세레나데
+        sub_title: Next-step
+        caption: 1M (eg. 2024.04.30 - 2024.06.10)
+        # quote: >
+        description: |
+          __도메인 주도 설계__
+            - 도메인이란 소프트웨어로 해결하고자 하는 문제 영역이고, 전략적 설계와 전술적 설게계 그 문제 영역을 슬기롭게 해결해가는 과정.
+      - layout: top-left
         title: Java Backend 과정
         sub_title: F-Lab
-        caption: 4M (eg. 2023.12. - ing)
+        caption: 4M (eg. 2023.12. - 2024.4.1)
         # quote: >
         description: |
           __성숙한 개발자가 되기 위한 과감한 투자__
